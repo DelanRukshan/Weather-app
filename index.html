@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="Maincard">
+       <div class="sidebar">
+            <div class="search">
+                <input type="text" placeholder="Enter any city name" spellcheck="false" id="myCity">
+                <button  ><img src="img/search.png" alt="search me"></button>
+            </div>
+            <div class="error">
+                <h2>Invalid City Name</h2>
+            </div>
+            <div class="weather">
+                 <img src="img/rain.png" alt="rain" class="weather-icon">
+                 <h1 class="temp">22°C</h1>
+                 <h2 class="city">New York</h2>
+                 <div class="details">
+                    <div class="col">
+                        <img src="img/humidity.png" alt="humidity">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="img/wind.png" alt="wind">
+                        <div>
+                            <p class="wind">15km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+       </div>
+       <!-- ---------------------------------------------------------------------------- -->
+      <div class="main">
+            <h2 class="Wforecast">Weather  Forecast</h2>
+            <hr height:4px>
+            <div class="cards" id="weather-cards">         
+                
+                <div class="card">
+                    <h2 class="dayName1">Sunday</h2>
+                    <div  class="card-icon"><img src="img/SunnyDay.png" alt="day-Image" width="60" class="cardIcon1"></div>
+                    <div class="day-temp">
+                        <h2 class="temp1">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+
+                 <div class="card">
+                    <h2 class="dayName2">Monday</h2>
+                    <div  class="card-icon"><img src="img/RainyDay.png" alt="day-Image"  width="60" class="cardIcon2"></div>
+                    <div class="day-temp">
+                        <h2 class="temp2">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+                
+                <div class="card">
+                    <h2 class="dayName3">Tuesday</h2>
+                    <div class="card-icon" ><img src="img/SunnyDay.png" alt="day-Image" width="60" class="cardIcon3"></div>
+                    <div class="day-temp">
+                        <h2 class="temp3">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+
+                <div class="card">
+                    <h2 class="dayName4">Wednesday</h2>
+                    <div class="card-icon" ><img src="img/RainyDay.png" alt="day-Image" width="60" class="cardIcon4"></div>
+                    <div class="day-temp">
+                        <h2 class="temp4">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+
+                <div class="card">
+                    <h2 class="dayName5">Thursday</h2>
+                    <div  class="card-icon" ><img src="img/SunnyDay.png" alt="day-Image" width="60" class="cardIcon5"></div>
+                    <div class="day-temp">
+                        <h2 class="temp5">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+
+                <div class="card">
+                    <h2 class="dayName6">Friday</h2>
+                    <div class="card-icon"><img src="img/RainyDay.png" alt="day-Image" width="60" class="cardIcon6"></div>
+                    <div class="day-temp">
+                        <h2 class="temp6">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div> 
+            </div>
+        
+            <h2 class="WHistory">Weather  History</h2>
+            <hr height:4px><br>
+                <!-- --------------------------------- -->
+            <div class="cards" id="weather-cards">         
+                
+                <div class="card">
+                    <h2 class="dayOldName1">Sunday</h2>
+                    <div  class="card-icon"><img src="img/SunnyDay.png" alt="day-Image" width="60" class="cardOldIcon1"></div>
+                    <div class="day-temp">
+                        <h2 class="Oldtemp1">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+
+                 <div class="card">
+                    <h2 class="dayOldName2">Monday</h2>
+                    <div  class="card-icon"><img src="img/RainyDay.png" alt="day-Image"  width="60" class="cardOldIcon2"></div>
+                    <div class="day-temp">
+                        <h2 class="Oldtemp2">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+                
+                <div class="card">
+                    <h2 class="dayOldName3">Tuesday</h2>
+                    <div class="card-icon" ><img src="img/SunnyDay.png" alt="day-Image" width="60" class="cardOldIcon3"></div>
+                    <div class="day-temp">
+                        <h2 class="Oldtemp3">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+
+                <div class="card">
+                    <h2 class="dayOldName4">Wednesday</h2>
+                    <div class="card-icon" ><img src="img/RainyDay.png" alt="day-Image" width="60" class="cardOldIcon4"></div>
+                    <div class="day-temp">
+                        <h2 class="Oldtemp4">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+
+                <!-- <div class="card">
+                    <h2 class="dayOldName5">Thursday</h2>
+                    <div  class="card-icon" ><img src="img/SunnyDay.png" alt="day-Image" width="60" class="cardOldIcon5"></div>
+                    <div class="day-temp">
+                        <h2 class="Oldtemp5">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>
+
+                <div class="card">
+                    <h2 class="dayOldName6">Friday</h2>
+                    <div class="card-icon"><img src="img/RainyDay.png" alt="day-Image" width="60" class="cardOldIcon6"></div>
+                    <div class="day-temp">
+                        <h2 class="Oldtemp6">28.3</h2>
+                        <span class="temp-unit">°C</span>
+                    </div>           
+                </div>  -->
+            </div>
+      </div>
+    </div>
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
